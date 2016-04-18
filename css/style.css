@@ -1,11 +1,23 @@
 body {
-	background-color: blue;
+	background-color: #08A59F;
 }
 
 h1{
-	color: white;
+	background-color: #FCB813; color: white;
+}
+
+h2{
+	background-color: #014467; color:white;
 }
 
 p{
 	color: white;
+}
+
+li{
+	color:white;
+}
+
+a{
+	color:white; visited:white; hover:white; active:white;
 }
