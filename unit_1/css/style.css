@@ -1,23 +1,13 @@
 body {
 	background-color: #08A59F;
+	color:#fff;
 }
-
 h1{
-	background-color: #FCB813; color: white;
+	background-color: #FCB813; 
 }
-
 h2{
-	background-color: #014467; color:white;
+	background-color: #014467; 
 }
-
-p{
-	color: white;
-}
-
-li{
-	color:white;
-}
-
-a{
-	color:white; visited:white; hover:white; active:white;
+a, a:visited{
+	color:inherit;
 }
