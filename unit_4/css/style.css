@@ -1,30 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
+@import url(https://fonts.googleapis.com/css?family=Noticia+Text);
+
 /*FORMATTING COLUMNS*/
 
 #container {
-	width:1300px;
+	width:1500px;
 	margin:0 auto;
 }
 
 #leftbar {
 	background:rgba(255,255,255,1);
 	float:left;
-	width: 20%;
+	width: 25%;
 	height:1000px;
 }
 
 #middlebar {
-	background: url(../images/mural.jpg);
+	background: url(../images/muraling.jpg);
 	background-size: cover;	
 	float:left;
-	width:60%;
+	width:50%;
 	height:1000px;
 }
 
 #rightbar {
 	background: rgba(255,255,255,1);
-	text-align:justify;
+	text-align:left;
 	float:left;
-	width:20%;
+	width:25%;
 	height:1000px;
 }
 
@@ -32,7 +35,7 @@
 /*STYLE ELEMENTS*/
 
 a:link, a:visited {
-	background-color: rgba(68,94,127,1);
+	background-color: orange;
 	color: white;
 	padding: 5px 5px;
 	text-align: center;
@@ -46,8 +49,9 @@ a:link, a:visited {
 body {
 	text-align: left;
 	background: white;
-	font-family: "Lucida Sans Unicode";
+	font-family: "Notica Text", serif;
 	color: black;
+	margin:1.5em;
 }
 
 #buttons {
@@ -55,7 +59,9 @@ body {
 }
 
 p, ul {
-	font-size:12px;
+	font-size:1em;
+	line-height: 1.5em;
+	margin:1.5em;
 }
 
 hr {
@@ -63,8 +69,11 @@ hr {
 	text-align:center;
 }
 
-#slogan {
-	font-style: italic;
+h2 {
+	font-family:'Cedarville Cursive', cursive;
+	font-size: 2.2em;
+	margin:1.5em;
 }
+
 
 
