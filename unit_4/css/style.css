@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
-@import url(https://fonts.googleapis.com/css?family=Noticia+Text);
-
-/*FORMATTING COLUMNS*/
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
 
 /*note: is this the right way to think about a 3-column structure?*/
 /*How can I make this responsive?*/
+
+#header {
+	height:50px;
+	background-color:white;
+}
 
 #container {
 	width:1500px;
@@ -35,6 +37,14 @@
 	height:1000px;
 }
 
+#footer {
+	clear:both;
+	background-color:white;
+	height:50px;
+	color:black;
+	text-align:center;
+}
+
 
 /*STYLE ELEMENTS*/
 
@@ -42,21 +52,18 @@
 /*note: want to make these into icons that change when you hover*/
 
 a:link, a:visited {
-	background-color: orange;
-	color: white;
-	padding: 5px 5px;
-	text-align: center;
-	width:60px;
-	height:60px;
-	text-align: center;
 	text-decoration: none;
-	display: inline-block;
+	color:black;
+}
+
+a:hover { 
+    background-color: rgba(255,190,60,.5);
 }
 
 body {
 	text-align: left;
 	background: white;
-	font-family: "Notica Text", serif;
+	font-family: "Raleway", serif;
 	color: black;
 	margin:1.5em;
 }
@@ -65,15 +72,18 @@ body {
 	text-align:center;
 }
 
-p, ul {
-	font-size:1em;
-	line-height: 1.5em;
-	margin:1.5em;
-}
-
 hr {
-	width:75%;
-	text-align:center
+	width:100%;
+	text-align:left
+	margin:1.5em;
+	border-top: 1px dotted #8c8b8b;
+}
+h1 {
+	font-family:'Cedarville Cursive', cursive;
+	font-size: 2.5em;
+	text-align:center;
+	margin:1.5em;
+	color:black;
 }
 
 h2 {
@@ -82,5 +92,10 @@ h2 {
 	margin:1.5em;
 }
 
-
-
+p, ul {
+	font-family: "Raleway", serif;
+	list-style-type: none;
+	font-size:.8em;
+	line-height: 1.5em;
+	margin:1.5em;
+}
