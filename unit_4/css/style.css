@@ -7,22 +7,21 @@ not overlap with image; line height in between h2 and body copy; padding*/
 
 /*note: is this the right way to think about a 3-column structure?*/
 /*How can I make this responsive?*/
-
-#header {
+* { margin:0; padding:0; box-sizing:border-box; }
+header {
 	height:50px;
 	background-color:white;
 }
 
 #container {
-	width:1500px;
+	max-width: 1500px;
 	margin:0 auto;
 }
 
 #leftbar {
-	background:rgba(255,255,255,1);
 	float:left;
 	width: 20%;
-	height:1000px;
+	padding-top: 10em;
 }
 
 #middlebar {
@@ -34,14 +33,13 @@ not overlap with image; line height in between h2 and body copy; padding*/
 }
 
 #rightbar {
-	background: rgba(255,255,255,1);
 	text-align:left;
 	float:left;
 	width:20%;
-	height:1000px;
+	padding: 10em 1em 0;
 }
 
-#footer {
+footer {
 	clear:both;
 	background-color:white;
 	height:50px;
@@ -84,14 +82,14 @@ h1 {
 	font-family:'Cedarville Cursive', cursive;
 	font-size: 2.5em;
 	text-align:center;
-	margin:1.5em;
+	/* margin: 1.5em; */
 	color:black;
 }
 
 h2 {
 	font-family:'Cedarville Cursive', cursive;
 	font-size: 1.9em;
-	margin:1.5em;
+	margin: 1.5em 0;
 }
 
 p, ul {
@@ -99,5 +97,5 @@ p, ul {
 	list-style-type: none;
 	font-size:.8em;
 	line-height: 1.5em;
-	margin:1.5em;
+	margin: 1.5em 0;
 }
