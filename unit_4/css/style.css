@@ -1,3 +1,7 @@
+/*Topics to dicuss: padding makes the right col shift to
+bottom of screen; fixing columns + scrolling middle content; getting header to 
+not overlap with image; line height in between h2 and body copy; padding*/
+
 @import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
 
@@ -48,9 +52,6 @@
 
 /*STYLE ELEMENTS*/
 
-
-/*note: want to make these into icons that change when you hover*/
-
 a:link, a:visited {
 	text-decoration: none;
 	color:black;
@@ -78,6 +79,7 @@ hr {
 	margin:1.5em;
 	border-top: 1px dotted #8c8b8b;
 }
+
 h1 {
 	font-family:'Cedarville Cursive', cursive;
 	font-size: 2.5em;
