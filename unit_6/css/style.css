@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+nav {
+	background-color:rgba(255,255,255,.5);
+	position:fixed;
+	margin:0 auto;
+}
+
+header {
+	height:50px;
+	background-color:white;
+}
+
+#wrapper {
+	max-width: 1500px;
+	margin:0 auto;
+}
+
+#leftbar {
+	float:left;
+	width: 20%;
+	padding-top: 10em;
+}
+
+#middlebar {
+	float:left;
+	background: url(../images/mural.jpg);
+	background-size: cover;	
+	width:60%;
+	height:1000px;
+}
+
+#rightbar {
+	float:left;
+	text-align:left;
+	width:20%;
+	padding: 10em 1em 0;
+}
+
+footer {
+	clear:both;
+	background-color:white;
+	height:50px;
+	color:black;
+	text-align:center;
+}
+
+
+/*STYLE ELEMENTS*/
+
+a:link, a:visited {
+	text-decoration: none;
+	color:black;
+}
+
+a:hover { 
+    background-color: rgba(255,190,60,.5);
+}
+
+body {
+	text-align: left;
+	background: white;
+	font-family: "Raleway", serif;
+	color: black;
+	margin:1.5em;
+}
+
+#buttons {
+	text-align:center;
+}
+
+hr {
+	width:100%;
+	text-align:left
+	margin:1.5em;
+	border-top: 1px dotted #8c8b8b;
+}
+
+h1 {
+	font-family:'Cedarville Cursive', cursive;
+	font-size: 2.5em;
+	text-align:center;
+	/* margin: 1.5em; */
+	color:black;
+}
+
+h2 {
+	font-family:'Cedarville Cursive', cursive;
+	font-size: 1.9em;
+	margin: 1.5em 0;
+}
+
+p, ul {
+	font-family: "Raleway", serif;
+	list-style-type: none;
+	font-size:.8em;
+	line-height: 1.5em;
+	margin: 1.5em 0;
+}
+
+#logo {
+	display: inline;
+	background-color:yellow;
+}
+
+.menu {
+	background-color:yellow;
+	text-transform:uppercase;
+	display:inline-block;
+}
+
+#navbar {
+	background-color:purple;
+	width:100%;
+}
