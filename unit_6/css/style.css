@@ -1,75 +1,104 @@
-@import url(https://fonts.googleapis.com/css?family=Cedarville+Cursive);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 
 * { margin:0; padding:0; box-sizing:border-box; }
-
-nav {
-	background-color:rgba(255,255,255,.5);
-	position:fixed;
-	margin:0 auto;
-}
-
-header {
-	height:50px;
-	background-color:white;
-}
 
 #wrapper {
 	max-width: 1500px;
 	margin:0 auto;
 }
 
-#leftbar {
-	float:left;
-	width: 20%;
-	padding-top: 10em;
+body {
+	font-family: Quicksand, Helvetica,sans-serif;
+	font-size:16px;
 }
 
-#middlebar {
-	float:left;
-	background: url(../images/mural.jpg);
-	background-size: cover;	
-	width:60%;
+nav {
+	background-color: rgba(255,255,255,.7);
+	width: 100%;
+    text-align:center;
+    padding:25em;
+	font-family: Arial, Helvetica,sans-serif;
+	padding: 0em 0em 0em 0em;
+	position:fixed;
+}
+
+nav li {
+	font-family: Quicksand, Helvetica, sans-serif;
+	display:inline-block;
+	width:300px;
+	font-size:16px;
+	padding:1em 0em 1em 0em;
+}
+
+#left {
+	padding:200px 0px 0px 0px;
+	background: rgb(91,155,213);
+	width:25%;
 	height:1000px;
+    padding: 20px;
+    float:left;
 }
 
-#rightbar {
-	float:left;
-	text-align:left;
-	width:20%;
-	padding: 10em 1em 0;
+#right {
+	background: url(../images/facilitate.jpg);
+	background-size: cover;	
+	width:75%;
+	height:1000px;
+    padding: 20px;
+    float:right;
 }
 
 footer {
 	clear:both;
-	background-color:white;
-	height:50px;
 	color:black;
 	text-align:center;
+	background-color: rgba(255,255,255,.5);
+    padding: 20px;
+    line-height:3em;
+}
+
+footer a {
+	padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+	float:left;
+	padding:2em;
+	vertical-align: middle;
 }
 
 
-/*STYLE ELEMENTS*/
+/*FONTS*/
 
 a:link, a:visited {
 	text-decoration: none;
 	color:black;
 }
 
-a:hover { 
-    background-color: rgba(255,190,60,.5);
+h1 {
+	font-size:3em;
+	font-family: Quicksand, Helvetica, sans-serif;
+	color:white;
 }
 
-body {
-	text-align: left;
-	background: white;
-	font-family: "Raleway", serif;
-	color: black;
-	margin:1.5em;
-}
-
-#buttons {
+.button {
 	text-align:center;
+	border-radius: 4px;
+	border: 4px solid white;
+	padding:1em;
+	margin: 1em 0em 1em 0em;
+	display:inline-block;
+	color: white;
+}
+
+.navbar a:hover {
+	background-color:rgb(184,44,89);
 }
 
 hr {
@@ -79,40 +108,6 @@ hr {
 	border-top: 1px dotted #8c8b8b;
 }
 
-h1 {
-	font-family:'Cedarville Cursive', cursive;
-	font-size: 2.5em;
-	text-align:center;
-	/* margin: 1.5em; */
-	color:black;
-}
-
-h2 {
-	font-family:'Cedarville Cursive', cursive;
-	font-size: 1.9em;
-	margin: 1.5em 0;
-}
-
-p, ul {
-	font-family: "Raleway", serif;
-	list-style-type: none;
-	font-size:.8em;
-	line-height: 1.5em;
-	margin: 1.5em 0;
-}
-
-#logo {
-	display: inline;
-	background-color:yellow;
-}
-
-.menu {
-	background-color:yellow;
-	text-transform:uppercase;
-	display:inline-block;
-}
-
-#navbar {
-	background-color:purple;
-	width:100%;
+#highlight {
+	color:yellow;
 }
