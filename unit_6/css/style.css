@@ -1,49 +1,39 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Catamaran:500,700,800,400,300);
 
 * { margin:0; padding:0; box-sizing:border-box; }
+
+/*SECTIONS*/
 
 #wrapper {
 	max-width: 1500px;
 	margin:0 auto;
 }
 
-body {
-	font-family: Quicksand, Helvetica,sans-serif;
-	font-size:16px;
-}
-
 nav {
 	background-color: rgba(255,255,255,.7);
 	width: 100%;
+   	font-family: Catamaran, Helvetica,sans-serif;
+   	font-weight:700;
     text-align:center;
-    padding:25em;
-	font-family: Arial, Helvetica,sans-serif;
-	padding: 0em 0em 0em 0em;
-	position:fixed;
-}
-
-nav li {
-	font-family: Quicksand, Helvetica, sans-serif;
-	display:inline-block;
-	width:300px;
-	font-size:16px;
-	padding:1em 0em 1em 0em;
+    text-transform:uppercase;
+    height:4em;
+	padding: 0em;
 }
 
 #left {
-	padding:200px 0px 0px 0px;
+	padding:6em 0em 0em 0em;
 	background: rgb(91,155,213);
 	width:25%;
-	height:1000px;
+	height:850px;
     padding: 20px;
     float:left;
 }
 
 #right {
-	background: url(../images/facilitate.jpg);
+	background: url(../images/globalhealth.jpg);
 	background-size: cover;	
 	width:75%;
-	height:1000px;
+	height:850px;
     padding: 20px;
     float:right;
 }
@@ -55,6 +45,42 @@ footer {
 	background-color: rgba(255,255,255,.5);
     padding: 20px;
     line-height:3em;
+    width:100%;
+}
+
+.social {
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+}
+
+/*NAV BAR*/
+
+.table {
+	display:table;
+	margin:0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 600px;
+	list-style: none;
+	padding: 1em 0em 1em 0em;
+}
+
+nav li {
+	float:left;
+	vertical-align: middle;
+	display:inline;
+	width:300px;
+	font-size:16px;
+	padding:.5em 0em 1em 0em;
+}
+
+.logo {
+	font-size: 1.7em;
+	padding:0em;
+	color:#B82C59;
 }
 
 footer a {
@@ -63,51 +89,89 @@ footer a {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-	float:left;
-	padding:2em;
-	vertical-align: middle;
 }
 
 
-/*FONTS*/
+/*LINKS*/
 
-a:link, a:visited {
+
+a {
+	text-decoration:none;
+}
+
+a:visited {
 	text-decoration: none;
+}
+
+nav a:hover, a:active {
+	border-bottom: 7px solid #B82C59;
 	color:black;
 }
 
-h1 {
-	font-size:3em;
-	font-family: Quicksand, Helvetica, sans-serif;
+nav a {
+	color:black;
+}
+
+.logo a:hover {
+	text-decoration:none;
+	border-bottom:none;
+	color:#B82C59;
+}
+
+article a:hover {
+	background-color:#B82C59;
 	color:white;
+	border-radius: 4px;
+	border: 4px solid white;
 }
 
 .button {
 	text-align:center;
+	letter-spacing:.1em;
+	font-family: Catamaran, Helvetica,sans-serif;
 	border-radius: 4px;
 	border: 4px solid white;
 	padding:1em;
-	margin: 1em 0em 1em 0em;
+	margin: 1.5em 0em 1.5em 0em;
 	display:inline-block;
-	color: white;
+	font-weight:700;
+	color:white;
 }
 
-.navbar a:hover {
-	background-color:rgb(184,44,89);
+
+/*HEADINGS*/
+
+h1 {
+	margin: 4em 0em 0em 0em;
+	font-size:3em;
+	font-family: Catamaran, Helvetica, sans-serif;
+	color:white;
+	line-height:1.1em;
+}
+
+p {
+	font-family: Catamaran, Helvetica, sans-serif;
+	line-height: 1.5em;
+	letter-spacing:.1em;
+	font-weight:300;
+	color:white;
 }
 
 hr {
-	width:100%;
+	width:50px;
+	border:none;
 	text-align:left
-	margin:1.5em;
-	border-top: 1px dotted #8c8b8b;
+	padding:2em 0em 2em 0em;
+	margin:2em 0em 2em 0em;
+	text-align:middle;
+	border-top: 7px solid #B82C59;
 }
 
 #highlight {
 	color:yellow;
+	font-weight:700;
+}
+
+footer p {
+	color:black;
 }
