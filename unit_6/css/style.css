@@ -16,26 +16,43 @@ nav {
    	font-weight:700;
     text-align:center;
     text-transform:uppercase;
-    height:4em;
+    height:5em;
 	padding: 0em;
+	border:1px black solid;
 }
 
-#left {
-	padding:6em 0em 0em 0em;
-	background: rgb(91,155,213);
+#two_column {
+	background-color: white;
+	border:1px black solid;
+	padding:1em;
+}
+
+.overview {
+	border:1px black solid;
+	padding:3em 1em 1em 1em;
+	background-color: rgb(91,155,213);
 	width:25%;
-	height:850px;
-    padding: 20px;
+	height:1000px;
     float:left;
 }
 
-#right {
+.content {
+	border:1px black solid;
+	padding:20px;
 	background: url(../images/globalhealth.jpg);
 	background-size: cover;	
 	width:75%;
-	height:850px;
-    padding: 20px;
+	height:1000px;
     float:right;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
 
 footer {
@@ -47,6 +64,7 @@ footer {
     line-height:3em;
     width:100%;
 }
+
 
 .social {
     height: auto; 
@@ -62,29 +80,25 @@ footer {
 	margin:0 auto;
 }
 
-ul#horizontal-list {
+ul#navigation {
 	min-width: 600px;
 	list-style: none;
-	padding: 1em 0em 1em 0em;
+	padding: 1em;
 }
 
 nav li {
 	float:left;
-	vertical-align: middle;
-	display:inline;
-	width:300px;
 	font-size:16px;
-	padding:.5em 0em 1em 0em;
+	padding: 1em;
+	border:1px black solid;
+	height:4em;
+	width:20%;
 }
 
 .logo {
 	font-size: 1.7em;
 	padding:0em;
 	color:#B82C59;
-}
-
-footer a {
-	padding: 1em;
 }
 
 ul {
@@ -138,11 +152,18 @@ article a:hover {
 	color:white;
 }
 
+footer a {
+	padding: 1em;
+}
+
 
 /*HEADINGS*/
 
+body {
+	font-size:16px;
+}
+
 h1 {
-	margin: 4em 0em 0em 0em;
 	font-size:3em;
 	font-family: Catamaran, Helvetica, sans-serif;
 	color:white;
