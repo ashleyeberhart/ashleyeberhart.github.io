@@ -5,7 +5,6 @@
 /*OVERALL*/
 
 #wrapper {
-	max-width: 90%;
 	margin:0 auto;
 }
 
@@ -13,15 +12,16 @@
 /*NAVIGATION STYLES*/
 
 nav {
-	background-color: rgba(255,255,255,.7);
+	background-color: rgb(255, 255, 255);
 	width: 100%;
-   	font-family: Catamaran, arial,sans-serif;
-   	font-weight:700;
-    text-align:center;
-    text-transform:uppercase;
-    height:5em;
+	font-family: Catamaran, arial,sans-serif;
+	font-weight:700;
+	text-align:center;
+	text-transform:uppercase;
 	padding: 0em;
 	margin-bottom:1em;
+	position: fixed;
+	z-index: 2;
 }
 
 .table {
@@ -54,9 +54,6 @@ nav li {
 /*BODY SECTIONS*/
 
 #two_column {
-	background-color: white;
-	overflow: hidden;
-	height:70em;
 }
 
 .overview {
@@ -66,10 +63,10 @@ nav li {
 	padding-left:1em;
 	background-color: rgb(91,155,213);
 	width:25%;
-	height:65em;
-    float:left;
-    padding-bottom: 99999px;
-    margin-bottom: -99999px;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	z-index: 1;
 }
 
 .fullbleed {
@@ -89,14 +86,12 @@ nav li {
 .content {
 	padding-left:1em;
 	padding-right:1em;
-	padding-bottom: 99999px;
-    margin-bottom: -99999px;
 	background-color:white;
 	margin: 0 auto;
-	background-size: cover;	
+	background-size: cover;
 	width:75%;
-	height:65em;
-    float:right;
+	float:right;
+	padding-top: 4em;
 }
 
 .clearfix:after {
@@ -109,17 +104,16 @@ nav li {
 }
 
 .gallery {
-	width:20em;
-	height:20em;
-	margin: 0em 1em 1em 0em;
-	padding: 0em;
+	width: 33.33%;
+	/* height:20em; */
+	/* margin: 0em 1em 1em 0em; */
+	padding: .5em;
 	float:left;
-	overflow:hidden;
+	/* overflow:hidden; */
 }
 
 img {
-	width:20em;
-	height:20em;
+	width: 100%;
 }
 
 /*FOOTER*/
@@ -128,10 +122,14 @@ footer {
 	clear:both;
 	color:black;
 	text-align:center;
-	background-color: rgba(255,255,255,.5);
-    padding: 20px;
-    line-height:3em;
-    width:100%;
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	line-height:3em;
+	width:100%;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
 }
 
 .social {
