@@ -1,23 +1,148 @@
 @import url(https://fonts.googleapis.com/css?family=Catamaran:500,700,800,400,300);
 
-* { margin:0; padding:0; box-sizing:border-box; }
+/*COLOR REFERENCES
+blue:; rgb(91,155,213)
+purple: #B82C59 OR rgb(184,44,89)
+yellow
+*/
 
-/*GENERAL*/
+
+/* ------------------------------------------------>>> RESETS & OVERRIDES <<< ------------------------------------------------ */
+
+* { margin:0; padding:0; box-sizing:border-box; }
 
 #wrapper {
 	margin:0 auto;
 }
 
+/* ------------------------------------------------>>> TYPEFACES <<< ------------------------------------------------ */
+
+body {
+	font-size:16px;
+	font-family: Catamaran, Helvetica, sans-serif;
+	color:white;
+	letter-spacing:.1em;
+	font-weight:300;
+}
+
+h1, p, h2, h3, li {
+	line-height:1.25em;
+}
+
+h1 {
+	font-size:3em;
+}
+
+h2 {
+	font-size:2em;
+}
+
+h3 {
+	font-size:1.5em;
+	font-weight:700;
+	padding-bottom:1em;
+	text-transform:uppercase;
+	letter-spacing: .2em;
+}
+
+section li {
+	list-style-type: none;
+	padding-bottom: 1.5em;
+}
+
+footer p {
+	color:black;
+}
+
+#highlight {
+	color:yellow;
+	font-weight:700;
+}
+
+.bold {
+	font-weight:500;
+}
+
+#logo {
+	font-weight:700;
+}
+
+hr {
+	width:4em;
+	border:none;
+	text-align:left
+	padding:2em 0em 2em 0em;
+	margin:2em 0em 2em 0em;
+	text-align:middle;
+	border-top: .5em solid #B82C59;
+}
+
+/* ------------------------------------------------>>> LINK STYLES <<< ------------------------------------------------ */
+
+/*ALL*/
+
+a, a:hover, a:visited {
+	text-decoration:none;
+	border:none;
+}
+
+/*NAV*/
+
+nav a {
+	color:black;
+}
+
+nav a:hover, nav a:active {
+	border-bottom: .5em solid #B82C59;
+	background-color:none;
+}
+
+a:hover#logo {
+	border:none;
+}
+
+
+/*ASIDE*/
+
+.overview a {
+	text-align:center;
+	letter-spacing:.1em;
+	font-family: Catamaran, Helvetica,sans-serif;
+	border-radius: 4px;
+	border: 4px solid white;
+	padding:1em;
+	margin: 2em 0em 2em 0em;
+	display:inline-block;
+	font-weight:700;
+	color:white;
+}
+
+.overview a:hover, .overview a:active {
+	background-color:#B82C59;
+	color:white;
+	border-radius: 4px;
+	border: 4px solid white;
+}
+
+/*FOOTER*/
+
+footer a:hover, footer a:active {
+	text-decoration:none;
+	border:none;
+}
+
+footer a {
+	padding: 1em;
+}
+
+
+/* ------------------------------------------------>>>LAYOUT<<< ------------------------------------------------ */
 
 /*NAVIGATION STYLES*/
 
 nav {
 	background-color: rgb(255, 255, 255);
 	width: 100%;
-	font-family: Catamaran, arial,sans-serif;
-	font-weight:700;
-	text-align:center;
-	text-transform:uppercase;
 	padding: 0em;
 	margin-bottom:1em;
 	position: fixed;
@@ -38,10 +163,13 @@ nav ul {
 
 nav li {
 	float:left;
+	letter-spacing:.2em;
 	font-size:1em;
 	padding: 1em;
 	height:4em;
 	width:20%;
+	text-align:center;
+	text-transform:uppercase;
 }
 
 #logo {
@@ -53,20 +181,14 @@ nav li {
 
 /*BODY SECTIONS*/
 
-#two_column {
-}
-
-.overview {
-	padding:6em 1em 1em 1em;
-	padding-top:6em;
-	padding-right:1em;
-	padding-left:1em;
-	background-color: rgb(91,155,213);
+aside.overview {
 	width:25%;
+	z-index: 1;
+	padding: 8em 2em 0em 2em;
+	background-color: rgb(91,155,213);
 	position: fixed;
 	left: 0;
 	height: 100%;
-	z-index: 1;
 }
 
 .fullbleed {
@@ -131,111 +253,6 @@ footer {
 }
 
 
-
-/*LINKS*/
-
-
-a, a:hover {
-	text-decoration:none;
-	border:none;
-}
-
-a:visited {
-	text-decoration: none;
-}
-
-nav a:hover, nav a:active {
-	border-bottom: 7px solid #B82C59;
-	color:black;
-	background-color:none;
-}
-
-nav a {
-	color:black;
-}
-
-a:hover#logo {
-	border:none;
-}
-
-section a:hover, section a:active {
-	background-color:#B82C59;
-	color:white;
-	border-radius: 4px;
-	border: 4px solid white;
-}
-
-footer a:hover, footer a:active {
-	text-decoration:none;
-	border:none;
-}
-
-.button {
-	text-align:center;
-	letter-spacing:.1em;
-	font-family: Catamaran, Helvetica,sans-serif;
-	border-radius: 4px;
-	border: 4px solid white;
-	padding:1em;
-	margin: 2em 0em 2em 0em;
-	display:inline-block;
-	font-weight:700;
-	color:white;
-}
-
-footer a {
-	padding: 1em;
-}
-
-
-/*HEADINGS*/
-
-body {
-	font-size:16px;
-	font-family: Catamaran, Helvetica, sans-serif;
-}
-
-h1 {
-	font-size:3em;
-	font-family: Catamaran, Helvetica, sans-serif;
-	color:white;
-}
-
-h3 {
-	font-size:1.5em;
-	color:white;
-	font-weight:500;
-	padding-bottom:1em;
-}
-
-p {
-	font-family: Catamaran, Helvetica, sans-serif;
-	line-height: 1.5em;
-	letter-spacing:.1em;
-	font-weight:300;
-	color:white;
-	line-height:1.25em;
-}
-
-hr {
-	width:50px;
-	border:none;
-	text-align:left
-	padding:2em 0em 2em 0em;
-	margin:2em 0em 2em 0em;
-	text-align:middle;
-	border-top: 7px solid #B82C59;
-}
-
-#highlight {
-	color:yellow;
-	font-weight:700;
-}
-
-footer p {
-	color:black;
-}
-
 /*GALLERY*/
 
 #featured>div {
@@ -260,6 +277,11 @@ footer p {
 	left:0;
 	right:0;
 	bottom:0;
+}
+
+.overlay a:hover {
+	color:white;
+	font-style:italic;
 }
 
 #featured div:hover .overlay {
