@@ -279,13 +279,20 @@ footer {
 	bottom:0;
 }
 
-.overlay a:hover {
-	color:white;
-	font-style:italic;
-}
-
 #featured div:hover .overlay {
 	background-color:rgba(184,44,89,.7);
 	color:rgba(255,255,255,1);
+}
+
+#featured div a {
+	color:rgba(255,255,255,0);
+}
+
+#featured div:hover a {
+	color:white;
+}
+
+#featured a:hover {
+	border-bottom: .5em solid white;
 }
 

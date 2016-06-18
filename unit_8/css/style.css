@@ -1,0 +1,298 @@
+@import url(https://fonts.googleapis.com/css?family=Catamaran:500,700,800,400,300);
+
+/*COLOR REFERENCES
+blue:; rgb(91,155,213)
+purple: #B82C59 OR rgb(184,44,89)
+yellow
+*/
+
+
+/* ------------------------------------------------>>> RESETS & OVERRIDES <<< ------------------------------------------------ */
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+#wrapper {
+	margin:0 auto;
+}
+
+/* ------------------------------------------------>>> TYPEFACES <<< ------------------------------------------------ */
+
+body {
+	font-size:16px;
+	font-family: Catamaran, Helvetica, sans-serif;
+	color:white;
+	letter-spacing:.1em;
+	font-weight:300;
+}
+
+h1, p, h2, h3, li {
+	line-height:1.25em;
+}
+
+h1 {
+	font-size:3em;
+}
+
+h2 {
+	font-size:2em;
+}
+
+h3 {
+	font-size:1.5em;
+	font-weight:700;
+	padding-bottom:1em;
+	text-transform:uppercase;
+	letter-spacing: .2em;
+}
+
+section li {
+	list-style-type: none;
+	padding-bottom: 1.5em;
+}
+
+footer p {
+	color:black;
+}
+
+#highlight {
+	color:yellow;
+	font-weight:700;
+}
+
+.bold {
+	font-weight:500;
+}
+
+#logo {
+	font-weight:700;
+}
+
+hr {
+	width:4em;
+	border:none;
+	text-align:left
+	padding:2em 0em 2em 0em;
+	margin:2em 0em 2em 0em;
+	text-align:middle;
+	border-top: .5em solid #B82C59;
+}
+
+/* ------------------------------------------------>>> LINK STYLES <<< ------------------------------------------------ */
+
+/*ALL*/
+
+a, a:hover, a:visited {
+	text-decoration:none;
+	border:none;
+}
+
+/*NAV*/
+
+nav a {
+	color:black;
+}
+
+nav a:hover, nav a:active {
+	border-bottom: .5em solid #B82C59;
+	background-color:none;
+}
+
+a:hover#logo {
+	border:none;
+}
+
+
+/*ASIDE*/
+
+.overview a {
+	text-align:center;
+	letter-spacing:.1em;
+	font-family: Catamaran, Helvetica,sans-serif;
+	border-radius: 4px;
+	border: 4px solid white;
+	padding:1em;
+	margin: 2em 0em 2em 0em;
+	display:inline-block;
+	font-weight:700;
+	color:white;
+}
+
+.overview a:hover, .overview a:active {
+	background-color:#B82C59;
+	color:white;
+	border-radius: 4px;
+	border: 4px solid white;
+}
+
+/*FOOTER*/
+
+footer a:hover, footer a:active {
+	text-decoration:none;
+	border:none;
+}
+
+footer a {
+	padding: 1em;
+}
+
+
+/* ------------------------------------------------>>>LAYOUT<<< ------------------------------------------------ */
+
+/*NAVIGATION STYLES*/
+
+nav {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	padding: 0em;
+	margin-bottom:1em;
+	position: fixed;
+	z-index: 2;
+}
+
+.table {
+	display:table;
+	margin:0 auto;
+}
+
+nav ul {
+	min-width: 50em;
+	list-style: none;
+	padding: 1em;
+	list-style-type;none;
+}
+
+nav li {
+	float:left;
+	letter-spacing:.2em;
+	font-size:1em;
+	padding: 1em;
+	height:4em;
+	width:20%;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+#logo {
+	font-size: 1.5em;
+	padding:0em;
+	color:#B82C59;
+}
+
+
+/*BODY SECTIONS*/
+
+aside.overview {
+	width:25%;
+	z-index: 1;
+	padding: 8em 2em 0em 2em;
+	background-color: rgb(91,155,213);
+	position: fixed;
+	left: 0;
+	height: 100%;
+}
+
+.fullbleed {
+	padding:20px;
+	background: url(../images/gh.jpg);
+	background-size: cover;	
+	width:75%;
+	height:65em;
+    float:right;
+}
+
+.featured div {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.content {
+	padding-left:1em;
+	padding-right:1em;
+	background-color:white;
+	margin: 0 auto;
+	background-size: cover;
+	width:75%;
+	float:right;
+	padding-top: 4em;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+img {
+	width: 100%;
+}
+
+/*FOOTER*/
+
+footer {
+	clear:both;
+	color:black;
+	text-align:center;
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	line-height:3em;
+	width:100%;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.social {
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+}
+
+
+/*GALLERY*/
+
+#featured>div {
+	float:left;
+	line-height:0;
+	overflow:hidden;
+	padding:1em;
+	position:relative;
+	width:33.33%;
+}
+
+#featured img {
+	width:100%;
+}
+.overlay {
+	background-color:rgba(184,44,89,0);
+	color:rgba(255,255,255,0);
+	margin:1em;
+	padding:4em 2em 2em 2em;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+#featured div:hover .overlay {
+	background-color:rgba(184,44,89,.7);
+	color:rgba(255,255,255,1);
+}
+
+#featured div a {
+	color:rgba(255,255,255,0);
+}
+
+#featured div:hover a {
+	color:white;
+}
+
+#featured a:hover {
+	border-bottom: .5em solid white;
+}
+
