@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Catamaran:500,700,800,400,300);
 
 /*COLOR REFERENCES
-blue:; rgb(91,155,213)
-purple: #B82C59 OR rgb(184,44,89)
-yellow
+blue: 		#XXXXXX	OR rgb(91,155,213)
+purple: 	#B82C59 OR rgb(184,44,89)
+yellow:		#XXXXXX	OR rgb(XXX,XXX,XXX)
 */
 
 
@@ -18,7 +18,7 @@ yellow
 /* ------------------------------------------------>>> TYPEFACES <<< ------------------------------------------------ */
 
 body {
-	font-size:16px;
+	font-size:14px;
 	font-family: Catamaran, Helvetica, sans-serif;
 	color:white;
 	letter-spacing:.1em;
@@ -26,7 +26,7 @@ body {
 }
 
 h1, p, h2, h3, li {
-	line-height:1.25em;
+	line-height:1.1em;
 }
 
 h1 {
@@ -271,7 +271,7 @@ footer {
 	background-color:rgba(184,44,89,0);
 	color:rgba(255,255,255,0);
 	margin:1em;
-	padding:4em 2em 2em 2em;
+	padding:2em 2em 2em 2em;
 	position:absolute;
 	top:0;
 	left:0;
@@ -296,3 +296,28 @@ footer {
 	border-bottom: .5em solid white;
 }
 
+
+/* ------------------------------------------------>>>RESPONSIVENESS<<< ------------------------------------------------ */
+
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 1025px) {
+
+	body {
+		font-size:12px;
+		color:white;
+	}
+
+	body, nav, aside, section, footer, .clearfix, aside.overview, .fullbleed, nav li {
+		position:static;
+		float:none;
+		width:100%;
+	}
+
+	#featured>div {
+		float: none;
+		position:static;
+	}
+
+}
