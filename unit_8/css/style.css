@@ -3,7 +3,7 @@
 /*COLOR REFERENCES
 blue: 		#5B9BD5	OR rgb(91,155,213)
 purple: 	#B82C59 OR rgb(184,44,89)
-yellow:		#D7C91F	OR rgb(215, 201, 31)
+yellow:		#FFFF00	OR rgb(255,255,0)
 */
 
 
@@ -55,7 +55,7 @@ footer p {
 }
 
 #highlight {
-	color:#D7C91F;
+	color:#FFFF00;
 	font-weight:700;
 }
 
